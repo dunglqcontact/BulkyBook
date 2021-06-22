@@ -9,9 +9,10 @@ namespace BulkyBook.Models
     {
         [Key]
         public int Id { get; set; }
-        [Display(Name="Category Name")]
+
+        [Display(Name = "Category Name")]
         [Required]
-        [MaxLength]
+        [MaxLength(50)]
         public string Name { get; set; }
     }
 }
